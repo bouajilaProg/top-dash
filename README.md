@@ -2,6 +2,10 @@
 
 A sleek, macOS Launchpad-inspired personal dashboard for organizing and launching your web apps. Grouped containers, real-time search, and a polished dark UI — all running in a lightweight Docker container.
 
+> ⚠️ **Early Alpha — Heavy Development in Progress**
+>
+> This project is in its very early stages. Core features are still being built, APIs may change, and things will break. Use at your own curiosity.
+
 ![Next.js](https://img.shields.io/badge/Next.js-16.2.9-black?logo=next.js)
 ![React](https://img.shields.io/badge/React-19-61DAFB?logo=react)
 ![Tailwind](https://img.shields.io/badge/Tailwind-4-06B6D4?logo=tailwindcss)
