@@ -51,7 +51,11 @@ export default function AppItem({ app }: { app: App }) {
       onClick={handleClick}
       className="group flex flex-col items-center justify-start gap-2 md:gap-2.5 focus-visible:outline-none"
     >
-      <div className="flex h-14 w-14 md:h-20 md:w-20 lg:h-24 lg:w-24 items-center justify-center rounded-xl md:rounded-2xl lg:rounded-3xl bg-base-200 shadow-sm transition-all duration-200 group-hover:scale-105 group-hover:bg-base-300 group-hover:shadow-md group-focus-visible:ring-2 group-focus-visible:ring-primary">
+      <div
+        className="flex h-14 w-14 md:h-20 md:w-20 lg:h-24 lg:w-24 items-center justify-center rounded-xl md:rounded-2xl lg:rounded-3xl shadow-sm transition-all duration-200 group-hover:scale-105 group-hover:shadow-md group-focus-visible:ring-2 group-focus-visible:ring-primary"
+        style={{ backgroundColor: app.bgColor || undefined }}
+        data-bg={app.bgColor ? "custom" : "default"}
+      >
         <AppIconView icon={app.icon} />
       </div>
       <span className="w-16 md:w-[5.5rem] lg:w-[7rem] text-center text-[9px] md:text-[11px] lg:text-sm font-medium leading-tight text-base-content/80 line-clamp-2">
