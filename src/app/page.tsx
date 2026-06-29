@@ -3,7 +3,7 @@
 import React, { useMemo } from "react";
 import Nav from "./components/Nav";
 import AppItem from "./components/AppItem";
-import { mockApps, type App } from "@/static/MockData";
+import { domainApps, type App } from "@/static/MockData";
 import { useMediaQuery } from "@/hooks/media-query";
 
 const MOBILE_COLS = 4;
@@ -72,14 +72,14 @@ export default function Home() {
         <div className="flex flex-1 flex-col overflow-hidden px-2">
           {isDesktop ? (
             <AppGrid
-              apps={mockApps}
+              apps={domainApps}
               cols={DESKTOP_COLS}
               minRows={GRID_DESKTOP_MIN_ROWS}
               className="mx-auto grid w-full max-w-6xl content-center gap-4 md:gap-x-8 md:gap-y-6 lg:gap-x-12 lg:gap-y-8"
             />
           ) : (
             <AppGrid
-              apps={mockApps}
+              apps={domainApps}
               cols={MOBILE_COLS}
               minRows={GRID_MIN_ROWS}
               className="mx-auto grid w-full max-w-md content-center gap-2"
