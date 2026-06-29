@@ -2,14 +2,13 @@
 
 import React, { useMemo } from "react";
 import Nav from "./components/Nav";
-import Footer from "./components/Footer";
 import AppItem from "./components/AppItem";
 import { mockApps, type App } from "@/static/MockData";
 import { useMediaQuery } from "@/hooks/media-query";
 
 const MOBILE_COLS = 4;
 const DESKTOP_COLS = 8;
-const GRID_MIN_ROWS = 6;
+const GRID_MIN_ROWS = 8;
 const GRID_DESKTOP_MIN_ROWS = 4;
 
 interface AppGridProps {
@@ -83,12 +82,11 @@ export default function Home() {
               apps={mockApps}
               cols={MOBILE_COLS}
               minRows={GRID_MIN_ROWS}
-              className="mx-auto grid w-full max-w-md content-center gap-3"
+              className="mx-auto grid w-full max-w-md content-center gap-2"
             />
           )}
         </div>
       </main>
-      <Footer />
     </div>
   );
 }
