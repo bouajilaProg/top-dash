@@ -1,3 +1,5 @@
+"use client";
+
 export default function Nav() {
   return (
     <nav className="flex items-center justify-between p-6">
@@ -5,11 +7,6 @@ export default function Nav() {
         TopDash
       </div>
       <div className="flex items-center gap-4">
-        <button className="btn btn-ghost btn-circle btn-sm">
-          <span className="sr-only">Settings</span>
-          {/* Settings icon could go here */}
-          ⚙️
-        </button>
         <div className="avatar placeholder">
           <div className="w-8 rounded-full bg-neutral text-neutral-content">
             <span className="text-xs">TD</span>
